@@ -1,6 +1,3 @@
-
-BERT-Based Sentence Classification Project
-Overview
 This project explores the use of BERT and DistilBERT models for sentence classification, focusing on distinguishing grammatically correct sentences from incorrect ones. The project highlights the challenges, iterations, and lessons learned while experimenting with different approaches to tackle the task effectively.
 
 I chose to work with BERT because its transformer architecture is well-suited for natural language processing tasks. My goal was to classify sentences as correct or incorrect by leveraging the contextual understanding capabilities of these models. Along the way, I explored different strategies, from training models from scratch to leveraging transfer learning, to find the most effective approach for this classification problem.
