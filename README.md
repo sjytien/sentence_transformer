@@ -2,7 +2,7 @@ This project explores the use of BERT and DistilBERT models for sentence classif
 
 I chose to work with BERT because its transformer architecture is well-suited for natural language processing tasks. My goal was to classify sentences as correct or incorrect by leveraging the contextual understanding capabilities of these models. Along the way, I explored different strategies, from training models from scratch to leveraging transfer learning, to find the most effective approach for this classification problem.
 
-Process
+**Process**
 Initial Approach: Training BERT from Scratch
 I started by implementing a BERT model for Masked Language Modeling (MLM) from scratch. The idea was to:
 Train the MLM on correct sentences to learn the contextual relationships between words.
