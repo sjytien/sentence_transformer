@@ -6,22 +6,21 @@ Go to Demo.ipynb to see demonstration of model making sentence predictions, conf
 
 **Process**
 
-Initial Approach: Training BERT from Scratch
+Initial Approach: Training and writing BERT from Scratch
 
 I started by implementing a BERT model for Masked Language Modeling (MLM) from scratch.
-The idea was to: Train the MLM on correct sentences to learn the contextual relationships between words.
-Fine-tune the model with correct and incorrect sentences for classification.
+The idea was to train the MLM on correct sentences to learn the contextual relationships between words and then fine-tune the model with correct and incorrect sentences for classification.
 
-Challenge: This approach had an excessively long training time and didn’t align with the problem's simpler classification requirements.
+Challenge: This approach had an excessively long training time.
 
 Iteration 1: Untrained DistilBERT
 I shifted to using DistilBERT, a smaller variant of BERT, initialized with random weights for sequence classification.
 Outcome: While this reduced the training time, the model achieved only ~60% validation accuracy, far below the ~80% achieved with pretrained models.
 
-Iteration 2: Fine-Tuning an MLM-Based DistilBERT
-Realizing the importance of transfer learning, I trained DistilBERT for Masked Language Modeling:
-Achieved a perplexity below 10 and an MLM loss of 2.9, indicating strong contextual learning.
-Transferred the MLM weights to a sequence classification model.
+Iteration 2: Transfer learning
+I used the model weights from the sequence classification training, trained it on MLM tasks, and then trained it on sequence classification tasks again. The model finally achieved a perplexity below 10 and an MLM loss of 2.9, indicating strong contextual learning. Some other thoughts/challenges I had were:
+
+- Whether to freeze layers: I decided in the end not to because DistilBERT only has 6 layers.
 
 Results:
 Validation accuracy improved to ~75% after training on one-third of the dataset.
