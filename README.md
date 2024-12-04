@@ -1,4 +1,4 @@
-I chose to work with BERT because its transformer architecture is well-suited for natural language processing tasks. My goal was to classify sentences as correct or incorrect by leveraging the contextual understanding capabilities of these models. Along the way, I explored different strategies, from training models from scratch to leveraging transfer learning, to find the most effective approach for this classification problem.
+I chose to work with BERT because its transformer architecture is well-suited for natural language processing tasks. My goal was that, given a pair of sentence that has one as grammatically correct and the other a grammatically incorrect version with minor changes (like typos, switched words/letters) to identify the correct one by leveraging the contextual understanding capabilities of these models. Along the way, I explored different strategies, from training models from scratch to leveraging transfer learning, to find the most effective approach for this classification problem.
 
 **Files Description**
 
