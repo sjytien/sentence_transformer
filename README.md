@@ -4,6 +4,8 @@ I chose to work with BERT because its transformer architecture is well-suited fo
 
 Go to Demo.ipynb to see demonstration of model making sentence predictions, confidence scores, etc.. Note that the final accuracy will be higher than tested because the final test involves giving the model exactly one correct sentence and one incorrect sentence. In cases where the model predicts both sentence as either correct or incorrect, it can use confidence scores to make a better judgement.
 
+This repository does not contain all my code. Some files, especially model weights, training data, and logs were too large for me to upload. I'm happy to send it by email.
+
 **Process**
 
 Initial Approach: Training and writing BERT from Scratch
