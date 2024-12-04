@@ -1,5 +1,9 @@
 I chose to work with BERT because its transformer architecture is well-suited for natural language processing tasks. My goal was to classify sentences as correct or incorrect by leveraging the contextual understanding capabilities of these models. Along the way, I explored different strategies, from training models from scratch to leveraging transfer learning, to find the most effective approach for this classification problem.
 
+**Files Description**
+
+Go to Demo.ipynb to see demonstration of model making sentence predictions, confidence scores, etc.. Note that the final accuracy will be higher than tested because the final test involves giving the model exactly one correct sentence and one incorrect sentence. In cases where the model predicts both sentence as either correct or incorrect, it can use confidence scores to make a better judgement.
+
 **Process**
 
 Initial Approach: Training BERT from Scratch
